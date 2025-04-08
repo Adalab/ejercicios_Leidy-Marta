@@ -46,7 +46,7 @@ sales_rep_employee_number,
 COUNT(DISTINCT customer_number) AS customers_employee
 FROM customers
 GROUP BY sales_rep_employee_number
-HAVING customers_employee > 7;
+HAVING customers_employee < 7;
 
 -- Selecciona el número de cada empleado de ventas, así como el numero de clientes distintos que tiene cada uno. Asigna una etiqueta de "AltoRendimiento" a aquellos empleados con mas de 7 clientes distintos.
 SELECT
